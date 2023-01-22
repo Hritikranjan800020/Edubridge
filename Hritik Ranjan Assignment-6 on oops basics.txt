@@ -1,0 +1,95 @@
+                                ASSIGNMENT-6                                                 HRITIK-RANJAN
+
+1.What is private access specifier?
+ans:private specifier is the specfier that makes its member variable and function variable invisible outside the class it means variable menber and function which are declared can only be accessed inside the class but not access outside the class.
+ 
+2.what are getter and setter methods? why do we need them?
+Ans:getter method is used to get the value and setter method is used to set or initialise the value.both allows to access the private member from outside the class.
+
+3.why this keyword in the setter method??
+Ans:the keyword "this" is used to refer current object.
+
+4.difference between localvariable and member variable/instance variable.
+Ans:localvariable:-* local variable are variable which can be declared inside the method.
+                   * they cannot give any default value and it must be initialised.
+member variable/instance variable:-* instance variable are the variable which are declared inside the class and outside the method.
+                                   * it is the part os object.
+                                   * it always gives the default value.
+                                   * the  value of instance variable can be changed by any method in the class but it is not accessesible from                                         outside the class.
+5.what is reference varialble?
+Ans:reference variable are variable that point to the object that are created in a given class.it allows to access the value of object.
+
+6.syntax of creating an object?
+Ans:class_name reference variable //reference variable should be same as class name with first letter uppercase.
+    reference variable=new Class_name();
+ex-Employee employee //reference variable points to memory location.
+employee=new Employee();//it create object of class(allocates the memory for the properties of class).
+
+7.explain in detail what happens when we create an object??
+Ans:when we create an object,memory is allocated to object to hold the properties of the object.and also referece is created which points to thr memory location.
+ 
+8.what is class?
+Ans:class is the blueprint of object.it is a logical entity.
+  
+9.what is object?
+Ans:object is the instance of class.it is a real time entity.
+ 
+10.what are the default values of all the datatypes?
+Ans:datatypes   default value
+     boolean     false
+       char       '\uoooo'
+       byte       o
+       short      o
+       int        o
+       long       oL
+       float      o.of
+       double     o.od
+       String     null
+
+11.difference between the static methods and instance method?
+Ans:stastic method does not need to create object to be called.
+    static method can be called with class name or by method name itself.
+
+instance method are the method which are not declared as static.
+it can be called only with the help of object.
+ 
+12.Syntax of accessing the member variable in the main?
+Ans:object.membervariable;
+Example:-employee.empName;
+
+13.Syntax of instance method defination?
+   Access_specifier return_type method_name()
+{
+  method body;
+}
+Access_specifier:it is the scope of method which allows who can access this method.
+return type:it return the value of specific data type from the method.
+method name:it should be given as per purpose and should follows the naming convention of method.
+
+14.syntax of static method defination?
+Ans:Access_modifier static datatype method_name()
+{
+method body;
+}
+Access_specifier:it is the scope of method which allows who can access this method.
+static:it is a keyword which allows to help the main method to run without creating any object. 
+return type:it return the value of specific data type from the method.
+method name:it should be given as per purpose and should follows the naming convention of method.
+
+15.difference between actual parameter and formal parameter?
+Ans:actual parameter:actual parameter is the parameter which are specified in the calling function.
+    formal parameter is those parameter which are declared in the calling function.
+16.why we need the parameter or arguments to the methods?
+Ans:we need the parameter to the method to the input to the method.
+it is necessary to pass the data to method that are working with data.
+
+17.why we need the return statement and return type to the method.
+Ans:return statement is used to return value from the method and flow of program execution comes out of it and goes back to the caller method.
+return type is used to return value of specific datatype from method.
+
+18.Method can be private.( true or false)
+Ans:true.
+
+19.what is the error message if we access private variable or method out side the class?
+Ans:The field class variable is not visible;
+Example:The field Employee empId is not visible;

@@ -1,0 +1,245 @@
+                              ASSIGNMENT-5                                         HRITIK-RANJAN
+
+1.Write your own program using arthmetic operators.
+PROGRAM:
+package hello.java;
+
+import java.util.Scanner;
+
+public class arithmaticOperator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+        System.out.println("ENTER 1ST NUMBER= ");
+        float num1=sc.nextFloat();
+        System.out.println("ENTER SECOND NUMBER= ");
+        float num2=sc.nextFloat();
+        
+        float add=num1+num2;
+        System.out.println("SUM OF TWO NUMBER IS="+add);
+        float sub=num1-num2;
+        System.out.println("SUBTRACTION OF TWO NUMBER IS="+sub);
+        float multi=num1*num2;
+        System.out.println("MULTIPLICATION OF TWO NUMBER IS="+multi);
+        float division=num1/num2;
+        System.out.println("DIVISION OF TWO NUMBER IS="+division);
+        float modularDivision=num1%num2;
+        System.out.println("MODULAR DIVISION  OF TWO NUMBER IS="+modularDivision);
+	}
+
+}
+
+
+2.Write your own program using arthmetic assignment operators.
+PROGRAM:
+package hello.java;                                          
+                                                             
+import java.util.Scanner;                                    
+public class arithmaticAssignmentOperator {                  
+                                                             
+	public static void main(String[] args) {                 
+		// TODO Auto-generated method stub                   
+		int a=100;                                           
+	int	b=50;                                                
+		                                                     
+		a+=b;                                                
+		System.out.println("ADDITION IS "+a);                
+		a-=b;                                                
+		System.out.println("SUBTRACTION IS "+a);             
+		a*=b;                                                
+		System.out.println("MULTIPLICATION IS "+a);          
+                                                             
+       Scanner sc=new Scanner(System.in);                    
+       System.out.println("ENTER TWO NUMBER=");              
+       float a1=sc.nextFloat();                              
+       float b1=sc.nextFloat();                              
+       System.out.println(a1/=b1);                           
+          System.out.println(a1%=b1);                        
+            System.out.println(a1==b1);                      
+	}                                                        
+                                                             
+}                                                            
+                                                             
+3.Write your own program using relational operators.
+PROGRAM:
+package hello.java;
+
+import java.util.Scanner;
+
+public class relationalOperator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		 System.out.println("ENTER 1ST NUMBER= ");
+	        float num1=sc.nextFloat();
+	        System.out.println("ENTER SECOND NUMBER= ");
+	        float num2=sc.nextFloat();
+	        
+	        System.out.println((num1>num2)+" GREATER?");
+	        System.out.println((num1<num2)+" SMALLER?");
+	        System.out.println((num1>=num2)+"  GREATER THAN EQUAL TO "+num2+" ?" );
+	        System.out.println((num1<num2)+"  LESS THAN EQUAL TO "+num2+" ?");
+	        System.out.println((num1==num2)+ "  EQUAL TO "+num2+" ?");
+	        System.out.println((num1!=num2)+"  NOT EQUAL TO "+num2+" ?");
+	        
+	        
+
+	}
+
+}
+
+
+4.Write your own program using logical operators.
+PROGRAM:
+package hello.java;
+import java.util.Scanner;
+public class logicalOperator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER FIRST NUMBER");
+		float num1=sc.nextFloat();
+		System.out.println("ENTER SECOND NUMBER");
+		float num2=sc.nextFloat();
+		System.out.println("ENTER THIRD NUMBER");
+		float num3=sc.nextFloat();
+		
+		System.out.println(num1+" IS GREATEST ?" +(num1>num2 && num1>num3));
+		System.out.println(num1+" IS GREATEST ? "+(num1>num2 || num1>num3));
+		System.out.println(num1+" IS GREATEST ? "+!(num1>num2 || num1>num3));
+		
+		
+		
+		
+	}
+
+}
+
+5.Write your own program to show the use of assignment operator.
+PROGRAM:
+package hello.java;
+
+import java.util.Scanner;
+
+public class assignmentOperator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER AGE OF SOHAN: ");
+		int s=sc.nextInt();
+		System.out.println("ENTER AGE OF MOHAN: ");
+		int m=sc.nextInt();
+		 s+=m;
+		 System.out.println("TOTAL AGE OF SOHAN AND MOHAN IS " +s);
+		 s-=m;
+		 System.out.println("DIFFERENCE BETWEEN AGE OF SOHAN AND MOHAN IS " +s);
+		 s/=m;
+		 System.out.println("division of their age: "+s);
+		 
+		 System.out.println("If Sohan eat 4 mango in a day then how many mango will eat in a week? calculate...... ");
+		 int a=4;System.out.println("4*");int b=sc.nextInt();
+		 
+		a*=b;
+		System.out.println(a+" Mango will be eaten in a week.");
+
+	}
+
+}
+
+6.Write a program to check age of student is greater than 18.
+PROGRAM:
+package hello.java;
+import java.util.Scanner;
+
+public class ageGreaterthan18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER AGE OF STUDENT TO CHECK.....");
+		int age=sc.nextInt();
+		int b=18;
+		
+		System.out.println("IS THE AGE OF STUDENT ABOVE 18 ?");
+		System.out.println((age>b));
+		
+
+}
+}
+ 
+7.Write a program to check number is even or odd.
+PROGRAM:
+package hello.java;
+
+import java.util.Scanner;
+
+public class evenOddCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER ANY NUMBER:....>> ");
+	    int num=sc.nextInt();
+		
+	     
+		System.out.println("IS GIVEN INPUT EVEN ?????? if the number is even then it give true otherwise it gives false.....>>>>");
+		System.out.println(num%2==0);
+
+	}
+
+}
+
+8.write a program to check whether number is greater than 100 and 200.
+PROGRAM:
+package hello.java;
+
+import java.util.Scanner;
+
+public class checkNum100Or200 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER ANY NUMBER TO CHECK WHETHER NUMBER IS 100 OR 200....>>>>");
+		float num=sc.nextFloat();
+		
+		 float a=100,b=200;
+		 System.out.println("IS THE NUMBER IS GREATER THAN 100.??  IF YES THEN IT PRINT 'TRUE' OTHERWISE 'FALSE' DISPLAY....");
+		 System.out.println((num>a));
+		 System.out.println("IS THE NUMBER IS GREATER THAN 200.??  IF YES THEN IT PRINT 'TRUE' OTHERWISE 'FALSE' DISPLAY....");
+		 System.out.println((num>b));
+
+
+	}
+
+}
+
+9.write a program to check whether both numbers are same or not.
+PROGRAM:
+package hello.java;
+
+import java.util.Scanner;
+
+public class checkBothNumSameOrNot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER ANY NUMBER TO CHECK WHETHER NUMBER IS EQUAL OR NOT.....>>>>");
+		float num1=sc.nextFloat();
+		float num2=sc.nextFloat();
+		
+		System.out.println("IS GIVEN INPUT ARE EQUAL OR NOT.????\nif no is equal then it print true otherwise it print false...\n");
+		System.out.println(num1==num2);
+		
+
+	}
+
+}
+
+Note:( dont use the if and switch case. write a simple programs without using if and switch in all the above programs).
+

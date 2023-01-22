@@ -1,0 +1,159 @@
+                                  ASSIGNMENT-7                                            HRITIK-RANJAN
+
+
+1.Write a program to create a two packages employeepackage and departmentpackage and under employeepackage create classes like Employee, Manager, Admin Under departmentpackage create class by name Department and Project,Create a Main class to test the above classes.
+
+
+package employeepack;
+
+ class Employee {
+	 String empName="Hritik Ranjan";
+	 int empId=442215;
+	 String empMobNo="5241748596";
+	 String designation="Java Full Stack Developer";
+	 String empName1="Kushagra Sharma";
+	 int empId1=228574;
+	 String empMobNo1="4585659846";
+	 String designation1="Data Analyst";
+ 
+ 
+
+	 
+	 void displayEmployee()
+	 {
+		 System.out.println("EPMLOYEE DETAILS IN THE COMPANY:\n");
+		 System.out.println(empName);
+		 System.out.println(empId);
+		 System.out.println(empMobNo);
+		 System.out.println(designation+" \n");
+		 
+		 System.out.println(empName1);
+		 System.out.println(empId1);
+		 System.out.println(empMobNo1);
+		 System.out.println(designation1);
+	 
+	 
+	 
+	 }
+
+}
+
+package employeepack;
+
+class Manager {
+	
+	private String managerName="Shrishant Tiwari";
+	private int managerId=45125;
+	private String mobNo="4515758578";
+	
+	void displayManager()
+	{
+		System.out.println("\nMANAGER DETAILS:\n");
+		System.out.println(managerName);
+		System.out.println(managerId);
+		System.out.println(mobNo);
+		
+	}
+	
+	
+	
+
+}
+
+package employeepack;
+
+public  class Admin {
+	 
+	private String adminName="Sumitkarn";
+	 private int adminId=452145;
+	 
+	public void displayAdmin()
+	 {
+		 System.out.println("\nADMIN DETAILS:\n");
+		 System.out.println(adminName);
+		 System.out.println(adminId);
+		 
+		
+	 }
+
+}
+
+package departmentpack;
+
+ class Project {
+	 private String prjtName="Net Banking";
+	 private String prjtName1="Istitute Management";
+	 private String prjtName2="Room Reservation";
+	 
+	 public void displayProject()
+	 {
+     System.out.println("\nPROJECT LIST:\n");
+	 System.out.println(prjtName);
+	 System.out.println(prjtName1);
+	 System.out.println(prjtName2);
+	 }
+	
+
+}
+ 
+package departmentpack;
+
+public class Department {
+	
+	private String dptName1="Analyst";
+	private String dptName2="mechanical";
+	
+	public void displayDepartment()
+	{
+	System.out.println("\nDEPARTMENT NAME IS:\n");	
+	System.out.println(dptName1);
+	System.out.println(dptName2);
+	
+	Project project=new Project();
+	project.displayProject();
+	
+	}
+}
+
+package employeepack;
+import departmentpack.*;
+import java.util.Scanner;
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Employee employee=new Employee();
+		employee.displayEmployee();
+		Manager manager=new Manager();
+        manager.displayManager();
+		Admin admin=new Admin();
+		admin.displayAdmin();
+		Department department=new Department();
+		department.displayDepartment();
+
+	}
+
+}
+
+package departmentpack;
+import employeepack.Admin;
+import java.util.Scanner;
+
+public class TestDepartment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Department department=new Department();
+	department.displayDepartment();
+	
+	Admin admin=new Admin();
+	admin.displayAdmin();
+		
+
+	}
+
+}
+
+
